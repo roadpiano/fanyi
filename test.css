@@ -38,10 +38,14 @@ table.tag_table td, table.tag_table th {
 }
 
 .bgcolor {
+  margin: 0;
   overflow: hidden;
 }
 .bgcolor p {
   margin: 0;
+}
+.bgcolor span {
+  display: block;
 }
 
 .left {
@@ -410,18 +414,19 @@ table.tag_table td, table.tag_table th {
     transform: rotateY(360deg);
   }
 }
-div.marquee {
+.marquee {
+  display: block;
   position: relative;
   overflow: hidden;
   font-size: 15px;
   line-height: 2;
 }
-div.marquee::after {
+.marquee::after {
   content: "　";
   white-space: nowrap;
   display: inline-block;
 }
-div.marquee span.inner_marquee {
+.marquee span.inner_marquee {
   position: absolute;
   top: 0;
   margin: 0;
